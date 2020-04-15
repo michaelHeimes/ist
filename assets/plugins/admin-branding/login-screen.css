@@ -1,0 +1,26 @@
+
+/* ---------------------------------------------------------------------- */
+/*  LOGO
+/* ---------------------------------------------------------------------- */
+
+	html {
+		background: #FBFBFB url(bg-halftone.png) !important;
+		height: 100%;
+	}
+
+	#login h1 a {
+		background: url(ist-logo.svg) no-repeat top center;
+		height: 101px;
+		width: auto;
+		background-size: contain;
+	}
+
+
+
+/* ---------------------------------------------------------------------- */
+/*  FORM
+/* ---------------------------------------------------------------------- */
+
+	#backtoblog { display: none; }
+
+	#login .message { margin-right: 8px; }

@@ -1,0 +1,20 @@
+/*Fixes vertically centered top nav*/
+.row.header .mainnav ul li {float:left;display:block;width:110px;padding:0;margin:0; text-align: center;height:83px;font-size:14px;font-family: "Cabin", Verdana, Arial, sans-serif;text-transform: uppercase;line-height:1.2;font-weight:400;}
+
+.row.header .mainnav ul li a, .row.header .mainnav ul li a:visited {margin-top: inherit;
+	*clear: expression(
+	style.marginTop = "" + (offsetHeight < parentNode.offsetHeight ? parseInt((parentNode.offsetHeight - offsetHeight) / 2) + "px" : "0"),
+	style.clear = "none", 0
+	);
+}
+
+.row.internal-header .last {height:117px;}
+
+.row.internal-header h1, .page-child .row.internal-header h1 {margin-top: inherit;
+	*clear: expression(
+	style.marginTop = "" + (offsetHeight < parentNode.offsetHeight ? parseInt((parentNode.offsetHeight - offsetHeight) / 2) + "px" : "0"),
+	style.clear = "none", 0
+	);
+}
+
+

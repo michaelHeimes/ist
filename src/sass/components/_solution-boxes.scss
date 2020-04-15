@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+//! Solutions Section
+// -----------------------------------------------------------------------------
+
+.solution-boxes {
+	display: inline-flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+	max-width: 1000px;
+}
+
+.solution-boxes a {
+	flex: 0 0 176px;
+	height: 113px;
+	width: 176px;
+	display: flex;
+	align-items: flex-end;
+	margin: 10px;
+	padding: 10px;
+	background-position: center;
+	background-size: cover;
+	transition: .15s;
+
+	&:hover {
+		opacity: .85;
+	}
+
+	.callout {
+		color: #fff;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 1.2em;
+		text-align: left;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Homepage version
+// -----------------------------------------------------------------------------
+
+.home-solutions .solution-boxes {
+	justify-content: center;
+}
+
+.home-solutions a.sbox {
+	flex: 0 0 230px;
+	height: 148px;
+	width: 230px;
+
+	.callout {
+		font-size: 21px;
+		line-height: 22px;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Backgrounds
+// -----------------------------------------------------------------------------
+
+.sbox-1 {
+	background-image: url(../../dist/img/solutions/solution-box-1.png);
+}
+
+.sbox-2 {
+	background-image: url(../../dist/img/solutions/solution-box-2.png);
+}
+
+.sbox-3 {
+	background-image: url(../../dist/img/solutions/solution-box-3.png);
+}
+
+.sbox-4 {
+	background-image: url(../../dist/img/solutions/solution-box-4.png);
+}
+
+.sbox-5 {
+	background-image: url(../../dist/img/solutions/solution-box-5.png);
+}
+
+.sbox-6 {
+	background-image: url(../../dist/img/solutions/solution-box-6.png);
+}
+
+.sbox-7 {
+	background-image: url(../../dist/img/solutions/solution-box-7.png);
+}
+
+.sbox-8 {
+	background-image: url(../../dist/img/solutions/solution-box-8.png);
+}
+
+//
+// a.sbox.sbox-1 {background-position: 0 0;}
+// a.sbox.sbox-1:hover {background-position: -176px 0;}
+// a.sbox.sbox-2 {background-position: 0 -113px;}
+// a.sbox.sbox-2:hover {background-position: -176px -113px;}
+// a.sbox.sbox-3 {background-position: 0 -226px;}
+// a.sbox.sbox-3:hover {background-position: -176px -226px;}
+// a.sbox.sbox-4 {background-position: 0 -339px;}
+// a.sbox.sbox-4:hover {background-position: -176px -339px;}
+// a.sbox.sbox-5 {background-position: 0 -452px;}
+// a.sbox.sbox-5:hover {background-position: -176px -452px;}
+// a.sbox.sbox-6 {background-position: 0 -565px;}
+// a.sbox.sbox-6:hover {background-position: -176px -565px;}

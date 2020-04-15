@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+//! Pre-Footer Area
+// -----------------------------------------------------------------------------
+
+#pre_footer {
+	background-color: #f2f2f2;
+    text-align: center;
+}
+
+#pre_footer .pfooter_c,
+#pre_footer .pfooter_c a {
+	display: inline-block;
+    width: 225px;
+    text-transform: uppercase;
+    color: #376896;
+	vertical-align: top;
+}
+
+#pre_footer .pfooter_c > div,
+#pre_footer .pfooter_c > a > div {
+    padding: 7px 0;
+}
+
+#pre_footer .header {
+	font-weight: bold;
+    border-bottom: 1px solid #e48b18;
+    font-size: 18px;
+}
+
+#pre_footer .body {
+	font-size: 14px;
+}
+
+
+// -----------------------------------------------------------------------------
+//! General
+// -----------------------------------------------------------------------------
+
+.footer {
+	background: #a7a7a7;
+	padding: 40px 15px 40px;
+
+	@include min( $xs ) {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	@include min( $md ) {
+		text-align: center;
+	}
+
+	@include min( $lg ) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.footer-wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.footer-nav,
+.footer .text-left {
+	display: inline-block;
+	text-align: left;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Structure
+// -----------------------------------------------------------------------------
+
+@include range( 604px, $md ) {
+	.footer .col-sm-6 {
+		width: 50%;
+		float: left;
+	}
+}
+
+@include range( 604px, $md ) {
+	.footer .col-md-3:nth-child(odd) {
+		padding-left: 12%;
+	}
+}
+
+@include min( $md ) {
+	.footer .col-md-3 {
+		margin-bottom: 2em;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Lists
+// -----------------------------------------------------------------------------
+
+ .footer-nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	li {
+		color: #5d5d5d;
+		font-size: 14px;
+		font-weight: 600;
+		text-transform: uppercase;
+		line-height: 1.2;
+		margin-bottom: 30px;
+		letter-spacing: .5px;
+
+		@include min( $md ) {
+			margin-bottom: 20px;
+		}
+    }
+
+	a,
+    a:visited {
+    	color: white;
+    	text-decoration: none;
+	}
+
+	a:hover {
+    	color: #eaeaea;
+    }
+}
+
+.footer-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+
+	li {
+		font-size:13px;
+		text-transform: none;
+		font-weight:400;
+		line-height:1.25;
+		margin: 5px 0 0 0;
+		letter-spacing: 0px;
+	}
+
+	a,
+    a:visited {
+    	color: #5d5d5d;
+    	text-decoration: none;
+	}
+
+	a:hover {
+    	color: #2d2d2d;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Contact
+// -----------------------------------------------------------------------------
+
+.footer .contact {
+	font-size: 13px;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5d5d5d;
+
+	a,
+	a:visited {
+		color: #5d5d5d;
+    	font-weight: 600;
+	}
+
+	a:hover {
+		color: #2d2d2d;
+	}
+}
+
+.footer .social_icon_wrapper {
+	margin: 3px 0 10px;
+    display: inline-block;
+}
+
+
+.social_icon ~ .social_icon {
+	margin-left: 5px;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Attribution / Copyright
+// -----------------------------------------------------------------------------
+
+.attribution {
+	clear: both;
+
+	@include max( 604px ) {
+		margin-top: 30px;
+	}
+}
+
+.attribution p,
+.copyright p {
+	color: white;
+	font-size: 14px;
+	line-height: 1.5;
+
+	a,
+	a:visited {
+		color: #00407b;
+	}
+}
+
+@include min( 604px ) {
+	.attribution p {
+		text-align: left;
+	}
+
+	.copyright p {
+		text-align: right;
+	}
+}
+
+@include range( 604px, $sm ) {
+	.footer .attribution {
+		width: 56%;
+	}
+	.footer .copyright {
+		width: 44%;
+	}
+}

@@ -1,0 +1,36 @@
+.search-banner {
+	background-image: url(../../assets/images/interior-approach.png);
+}
+
+.search .row.page-content .post ol.searchresults {
+	list-style-type: none;
+	padding-left:0;
+
+	li {
+		margin-bottom: 25px;
+	}
+
+	h4 {
+		font-size:1.1em;
+		padding: 0;
+	}
+
+	h4 a,
+	h4 a:visited {
+		color:#E48B18;
+	}
+
+	li h4 a:hover {
+		color: #b66f13;
+		text-decoration:none;
+	}
+
+	li a.permalink {
+		color:#00407B;
+	}
+
+	li a.permalink:hover {
+		color: #00407B;
+		text-decoration: underline;
+	}
+}

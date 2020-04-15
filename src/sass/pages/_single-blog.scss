@@ -1,0 +1,73 @@
+
+// -----------------------------------------------------------------------------
+//! High Level
+// -----------------------------------------------------------------------------
+
+.page-content.single-blog {
+	position: relative;
+
+	@include min( $sm ) {
+		padding-top: 55px;
+		padding-bottom: 55px;
+	}
+
+	@include min( $lg ) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	> .row {
+		padding: 0;
+		max-width: 1030px;
+	}
+}
+
+@include max( 900px ) {
+	.single-blog .col-sm-8,
+	.single-blog .col-sm-4 {
+		width: 100%;
+	}
+}
+
+.single-blog-content {
+	font-family: ''proxima-nova',sans-serif;';
+
+	@include max( 900px ) {
+		padding-bottom: 40px;
+	}
+
+	@include min( 900px ) {
+		padding-right: 60px;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Elements
+// -----------------------------------------------------------------------------
+
+.blog-banner {
+	background-image: url(../../assets/images/header-images/blog-header.jpg);
+}
+
+.single-blog h2 {
+	color: #004c6c;
+	font-size: 24px;
+	font-family: ''proxima-nova',sans-serif;';
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.single-blog .date {
+	font-family: ''proxima-nova',sans-serif;';
+	color: #464646;
+	font-size: 14px;
+}
+
+.single-blog .featured-image {
+	margin-bottom: 20px;
+	margin-top: 15px;
+
+	img {
+		height: auto;
+	}
+}

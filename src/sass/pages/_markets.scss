@@ -1,0 +1,71 @@
+.market-boxes {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.market-boxes a {
+	display: flex;
+	align-items: flex-end;
+	width: 250px;
+	height: 203px;
+	background-size: cover;
+	margin: 10px;
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: #0a0a0a;
+		opacity: .4;
+	}
+
+	&.government {
+		background-image: url(../img/markets/market-box-government.jpg);
+
+		&:hover:before {
+			opacity: .6;
+			background: $green;
+		}
+	}
+
+	&.education {
+		background-image: url(../img/markets/market-box-education.jpg);
+
+		&:hover:before {
+			opacity: .6;
+			background: $orange;
+		}
+	}
+
+	&.healthcare {
+		background-image: url(../img/markets/market-box-healthcare.jpg);
+
+		&:hover:before {
+			opacity: .6;
+			background: $blue;
+		}
+	}
+
+	&.property-management {
+		background-image: url(../img/markets/market-box-property-management.jpg);
+
+		&:hover:before {
+			opacity: .6;
+			background: $gray;
+		}
+	}
+}
+
+.market-box-text {
+	color: #fff;
+	font-size: 24px;
+	padding: .6em;
+	z-index: 5;
+	position: relative;
+}

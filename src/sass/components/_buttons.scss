@@ -1,0 +1,43 @@
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	border: 0;
+	border-radius: 10px;
+	font-size: 16px;
+	color: white;
+	transition: .2s;
+	font-size: 14px;
+	font-family: $proxima;
+    padding-top: 0;
+    padding-bottom: 0;
+	text-transform: uppercase;
+	height: 33px;
+	line-height: 34px;
+
+	@include min( $md ) {
+		font-size: 16px;
+		line-height: 43px;
+		height: 41px;
+	}
+}
+
+
+.btn.btn-orange {
+	background-color: $orange;
+	color: white;
+
+	&:visited {
+		color: white;
+	}
+
+	&:hover {
+		background-color: #d07f17;
+	}
+
+	&[disabled],
+	&.disabled {
+		background: #f0ba75;
+		cursor: not-allowed;
+	}
+}

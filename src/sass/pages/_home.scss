@@ -1,0 +1,213 @@
+
+// -----------------------------------------------------------------------------
+//! Sections
+// -----------------------------------------------------------------------------
+
+section h1 {
+	color: $orange;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 500;
+	line-height: 1.2em;
+	text-align: center;
+
+	.text-blue {
+		color: #0178bd;
+	}
+
+	@include max( $sm ) {
+		br {
+			display: none;
+		}
+	}
+
+	@include min( $sm ) {
+		font-size: 40px;
+		max-width: 790px;
+		line-height: 1em;
+		margin: auto;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Approach
+// -----------------------------------------------------------------------------
+
+.home-approach img {
+	@include max( $md ) {
+		display: none;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Slider
+// -----------------------------------------------------------------------------
+
+.home-slider {
+	// background: url(/wp-content/themes/ist/assets/images/slider-background.png);
+	background-size: cover;
+	background-position: right center;
+	position: relative;
+	padding: 0;
+	text-align: center;
+	visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+
+	&.slick-initialized {
+		visibility: visible;
+	}
+
+	.slide-content {
+		display: inline-block;
+	}
+
+	.slick-track {
+		display: flex;
+	}
+
+	.slick-slide {
+		height: auto;
+		padding: 40px 15px;
+		background-size: cover;
+		background-position: center;
+		width: 100%;
+
+		@include min( 420px ) {
+			padding: 40px 25px;
+		}
+
+		@include min( $sm ) {
+			padding: 80px 0px;
+		}
+	}
+}
+
+.slide-inner {
+	margin: 0 auto;
+	max-width: 790px;
+	text-align: left;
+	display: inline-block;
+}
+
+.slide-pre-title {
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+
+	@include min( $sm ) {
+		font-size: 28px;
+	}
+
+}
+
+.home-slider .slide-title {
+	color: white;
+	padding: 0;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 6px;
+	font-family: $proxima;
+	font-weight: 400;
+	font-size: 31px;
+
+	@include min( $sm ) {
+		font-size: 45px;
+	}
+}
+
+.slide.large-title .slide-title {
+	font-weight: bold;
+
+	@include min( $sm ) {
+		font-size: 57px;
+	}
+}
+
+.home-slider p {
+	color: #fff;
+	font-family: $proxima;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.4;
+
+	@include min( $sm ) {
+		font-size: 18px;
+	}
+}
+
+.home-slider img {
+	margin: auto;
+	margin-bottom: 20px;
+	max-width: 45px;
+
+	@include min( $sm ) {
+		float: left;
+		margin-right: 30px;
+		max-width: 75px;
+	}
+
+	@include min( $lg ) {
+		max-width: 120px;
+	}
+
+	@include min( 1200px ) {
+		margin-right: 40px;
+	}
+}
+
+.home-slider .slide-callout {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.home-slider .slide-callout .btn {
+	padding: 0px 25px;
+	margin-top: 20px;
+	height: auto;
+	font-family: $proxima;
+	font-size: 17px;
+}
+
+@include min( $sm ) {
+	.show-arrows .slick-arrow {
+		opacity: 1;
+		pointer-events: auto;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
+
+.slick-slide:focus {
+	outline: 0;
+}
+
+// -----------------------------------------------------------------------------
+//! Approach Section
+// -----------------------------------------------------------------------------
+
+.home-approach h2 {
+	color: white;
+}
+
+.home-approach p,
+.home-approach li, {
+	color: white;
+	font-size: 14px;
+
+	@include min( $sm ) {
+		font-size: 16px;
+	}
+
+	a {
+		color: #e48b18;
+
+		&:hover {
+			color: #a66512;
+		}
+	}
+}

@@ -1,0 +1,184 @@
+// -----------------------------------------------------------------------------
+//! Mixins
+// -----------------------------------------------------------------------------
+
+	@mixin min( $breakpoint ) {
+		@media print, screen and ( min-width: $breakpoint ) {
+			@content;
+		}
+	}
+
+	@mixin max( $breakpoint ) {
+		$breakpoint: $breakpoint - 1;
+		@media screen and ( max-width: $breakpoint ) {
+			@content;
+		}
+	}
+
+	@mixin range( $start, $end ) {
+		$end: $end - 1;
+		@media screen and ( min-width: $start ) and ( max-width: $end ) {
+			@content;
+		}
+	}
+
+
+// -----------------------------------------------------------------------------
+//! Classes
+// -----------------------------------------------------------------------------
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+.nowrap {
+	overflow: auto;
+}
+
+
+.text-left {
+	display: inline-block;
+	text-align: left;
+}
+
+.ta_left {
+	text-align: left;
+}
+
+.clearfix,
+.row,
+.footer
+	{ *zoom: 1; }
+
+
+.clearfix:before, .clearfix:after,
+.row,
+.footer
+	{ content: ""; display: block; }
+
+.clearfix:after,
+.row,
+.footer {
+	clear: both;
+}
+
+.imgtxt {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+// -----------------------------------------------------------------------------
+//! Colors
+// -----------------------------------------------------------------------------
+
+.color1 {
+	color: #E68D1A; /* gold */
+}
+
+.color2 {
+	color: #376896; /* blue */
+}
+
+.color2_bg {
+	background-color: #376896;
+}
+.color2_overlay {
+	background-color: rgba(0,64,123,.85);
+}
+body .color2_bg * {
+	color: #fff;
+}
+
+.color3 {
+	color: #E68D1A; /* orange */
+}
+
+.color3_bg {
+	background-color: #E68D1A;
+}
+
+.color3_overlay {
+	background-color: rgba(230,141,26,.85);
+}
+
+.color4 {
+	color: #1f6c0b; /* green */
+}
+
+.color4_bg {
+	background-color: #1f6c0b;
+}
+
+.color4_overlay {
+	background-color: rgba(31,108,11,.85);
+}
+
+.color5 {
+	color: #002c69; /* dark blue */
+}
+
+.color5_bg {
+	background-color: #002c69;
+}
+
+.color5_overlay {
+	background-color: rgba(0,46,109,.85);
+}
+
+.color6 {
+	color: #0d1e30; /* dark dark blue */
+}
+
+.color6_bg {
+	background-color: #0d1e30;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Misc
+// -----------------------------------------------------------------------------
+
+@include min( 700px ) {
+	.w700_25p {display:inline-block; width:25%;}
+	.w700_75p {display:inline-block; width:75%;}
+}

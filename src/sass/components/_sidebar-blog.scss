@@ -1,0 +1,233 @@
+
+// -----------------------------------------------------------------------------
+//! General
+// -----------------------------------------------------------------------------
+
+.blog-sidebar {
+	border-top: 1px solid #cfcfcf;
+	padding-top: 30px;
+
+	@include min( 900px ) {
+		border-top: 0;
+		padding-top: 0;
+		max-width: 295px;
+		float: right;
+	}
+}
+
+.blog-sidebar .btn {
+	width: 140px;
+
+	@include min( $md ) {
+		width: 160px;
+	}
+}
+
+.blog-sidebar input[type="text"] {
+	font-size: 16px;
+	background: #ebebeb;
+	border: 0;
+	height: 45px;
+	width: 100%;
+	max-width: 295px;
+	padding: 5px 12px;
+
+	&:focus {
+		outline: 0;
+	}
+
+	@include min( $sm ) {
+		font-size: 14px;
+	}
+
+	&::-webkit-input-placeholder {
+    	color: #464646;
+	}
+	&:-moz-placeholder {
+	   color: #464646;
+	   opacity:  1;
+	}
+	&::-moz-placeholder {
+	   color: #464646;
+	   opacity:  1;
+	}
+	&:-ms-input-placeholder {
+	   color: #464646;
+	}
+}
+
+.blog-sidebar h3 {
+	font-family: $proxima;
+	margin: 30px 0 0;
+	text-transform: uppercase;
+	color: #00407b;
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 500;
+	padding-top: 27px;
+	border-top: 1px solid #cfcfcf;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Search
+// -----------------------------------------------------------------------------
+
+.blog-sidebar .search-form {
+	margin-bottom: 30px;
+	position: relative;
+	max-width: 295px;
+
+	i {
+		position: absolute;
+		top: 11px;
+    	right: 12px;
+    	color: white;
+    	font-size: 22px;
+		pointer-events: none;
+	}
+}
+
+.blog-sidebar .search-input {
+	padding-right: 47px;
+	text-transform: none;
+	color: #545454;
+}
+
+.blog-sidebar .search-submit {
+	display: block;
+	width: 43px;
+	height: 45px;
+	background: #005395;
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: 0;
+	outline: 0;
+	transition: .2s;
+
+	&:hover {
+		background: #689bc3;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Socials
+// -----------------------------------------------------------------------------
+
+.blog-sidebar .socials {
+	max-width: 295px;
+}
+
+.blog-sidebar .social {
+	display: block;
+	float: left;
+	width: 91px;
+	text-align: center;
+	color: white;
+	border-radius: 3px;
+	padding: 6px 0;
+	transition: .2s;
+	margin-right: 3.5%;
+
+	i {
+		color: white;
+	}
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		margin-bottom: 10px;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Categories
+// -----------------------------------------------------------------------------
+
+.blog-sidebar .categories {
+
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style-type: none;
+		padding-top: 4px;
+	}
+
+	a {
+		color: #464646;
+		text-decoration: underline;
+
+		&:hover {
+			color: #005395;
+		}
+	}
+
+	li.current-cat a {
+		color: #005395;
+		font-weight: bold;
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Subscribe
+// -----------------------------------------------------------------------------
+
+.subscribe-form {
+	position: relative;
+}
+
+.blog-sidebar .subscribe p {
+	color: #464646;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-bottom: 14px;
+	padding-top: 0;
+}
+
+.blog-sidebar .subscribe-input {
+	margin-bottom: 25px;
+	display: block;
+	position: relative;
+}
+
+.subscribe-submit:focus {
+	outline: none;
+}
+
+.subscribe-success {
+	display: none;
+	height: 33px;
+
+	@include min( $md ) {
+		height: 41px;
+	}
+}
+
+.error {
+	.subscribe-input {
+		box-shadow: inset 0px 0px 9px -1px red;
+	}
+
+	&:after {
+		content: "Please enter a valid email";
+		position: absolute;
+		font-size: 10px;
+		color: red;
+		left: 6px;
+    	bottom: 42px;
+
+		@include min( $md ) {
+			bottom: 50px;
+		}
+	}
+}

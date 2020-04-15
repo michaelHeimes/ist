@@ -1,0 +1,584 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+	background: #f0f0f0;
+}
+
+body {
+	font-size: 15px;
+	text-align: left;
+	vertical-align: top;
+	background: #a7a7a7;
+	color: #333;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Sections
+// -----------------------------------------------------------------------------
+
+section {
+	padding: 40px 15px;
+
+	@include min( 420px ) {
+		padding: 60px 25px;
+	}
+
+	@include min( 1100px ) {
+		padding: 80px 50px;
+	}
+}
+
+.contain {
+	max-width: 1100px;
+	margin: auto;
+
+	&.text-center {
+		text-align: center;
+	}
+}
+
+.contain.narrow {
+	max-width: 894px;
+}
+
+
+
+// -----------------------------------------------------------------------------
+//! Wordpress Image Styles
+// -----------------------------------------------------------------------------
+
+img.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a img.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+}
+
+a img.alignleft {
+	float:left;
+	margin: 0 1em 1em 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Structure
+// -----------------------------------------------------------------------------
+
+.site-container {
+	width:100%;
+	background: #fff;
+} /*this seemingly extra div is to accomodate the full width footer and the non-full width container*/
+
+.wrapper {
+	background:#fff;
+}
+
+.row {
+	margin:0 auto;
+	padding:40px 50px;
+	max-width:1200px;
+}
+.row .one-col,
+.row .two-col,
+.row .three-col,
+.row .four-col,
+.row .five-col,
+.row .six-col,
+.row .seven-col,
+.row .eight-col,
+.row .nine-col,
+.row .ten-col,
+.row .eleven-col {
+	margin-right:5px;
+	float:left;
+	min-height:1px;
+}
+.row .last {
+	margin-right:0;
+}
+.row .one-col {
+	width:70px;
+}
+.row .two-col {
+	width:145px;
+}
+.row .three-col {
+	width:220px;
+}
+.row .four-col {
+	width:295px;
+}
+.row .five-col {
+	width:370px;
+}
+.row .six-col {
+	width:445px;
+}
+.row .seven-col {
+	width:520px;
+}
+.row .eight-col {
+	width:595px;
+}
+.row .nine-col {
+	width:670px;
+}
+.row .ten-col {
+	width:745px;
+}
+.row .eleven-col {
+	width:820px;
+}
+.row .twelve-col {
+	max-width:900px;
+}
+.row .one-col.last {
+	width:75px;
+}
+.row .two-col.last {
+	width:150px;
+}
+.row .three-col.last {
+	width:225px;
+}
+.row .four-col.last {
+	width:300px;
+}
+.row .five-col.last {
+	width:375px;
+}
+.row .six-col.last {
+	width:450px;
+}
+.row .seven-col.last {
+	width:525px;
+}
+.row .eight-col.last {
+	width:600px;
+}
+.row .nine-col.last {
+	width:675px;
+}
+.row .ten-col.last {
+	width:750px;
+}
+.row .eleven-col.last {
+	width:825px;
+}
+.row.sliderrow {
+	 padding: 0 30px 0 50px;
+	 width:920px;
+ }
+ .row.sliderrow .nine-col.last {
+	 width:690px;
+ }
+
+
+// -----------------------------------------------------------------------------
+//! Sections
+// -----------------------------------------------------------------------------
+
+.p_body {
+	width: 65%;
+    display: inline-block;
+}
+
+.p_nav {
+	width: 28%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.p_row {
+	text-align: center;
+	max-width:1200px;
+	margin: 0 auto;
+	padding: 40px 15px;
+
+	@include min( $xs ) {
+		padding: 40px 25px;
+	}
+
+	@include min( $lg ) {
+		padding: 40px 50px;
+	}
+}
+.p_row.fw {
+	max-width: 3000px;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Slick Dots
+// -----------------------------------------------------------------------------
+
+.slick-dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: 10px;
+
+	@include min( $lg ) {
+		height: 15px;
+	}
+}
+
+
+.slick-dots li {
+	display: inline-block;
+    list-style-type: none;
+	opacity: .85;
+	transition: .2s;
+	outline: 0;
+	height: 10px;
+	padding: 0 5px;
+
+	&.slick-active,
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.slick-dots button {
+	background: white;
+    color: transparent;
+    border: 0;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+
+	&:focus {
+		outline: 0;
+	}
+
+	@include min( $lg ) {
+		width: 15px 15px;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Slick Arrows
+// -----------------------------------------------------------------------------
+
+.slick-arrow {
+	width: 15px;
+	height: 40px;
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	top: 50%;
+	margin-top: -20px;
+	cursor: pointer;
+	color: white;
+	font-size: 40px;
+	z-index: 10;
+
+	&.prev {
+		left: 4%;
+
+		@include min( $md ) {
+			left: 10%;
+		}
+	}
+
+	&.next {
+		right: 4%;
+
+		@include min( $md ) {
+			right: 10%
+		}
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Pagination
+// -----------------------------------------------------------------------------
+
+.row.page-content .post {
+
+	.navigation {
+		float:left;
+	}
+
+	.pagination {
+		clear: both;
+		padding: 0;
+		position: relative;
+		font-size: 13px;
+		line-height: 13px;
+		margin: 0;
+	}
+
+	.pagination span,
+	.pagination a {
+		display:block;
+		float:left;
+		margin:2px 2px 2px 0;
+		padding:6px 9px 5px 9px;
+		text-decoration:none;
+		width:auto;
+		color:#fff;
+		background:#00407B;
+
+		&.current {
+			padding:6px 9px 5px 9px;
+			color:#FFF;
+			background:#E48B18;
+		}
+	}
+
+	.pagination a:hover {
+		color:#fff;
+		background:#E48B18;
+	}
+}
+
+// -----------------------------------------------------------------------------
+//! Socials
+// -----------------------------------------------------------------------------
+
+.social i {
+	color: white;
+}
+
+.social.facebook {
+	background: #3a579a;
+
+	&:hover {
+		background: lighten(#3a579a, 10%);
+	}
+}
+
+.social.twitter {
+	background: #00abf0;
+
+	&:hover {
+		background: lighten(#00abf0, 10%);
+	}
+}
+
+.social.google-plus {
+	background: #df4a32;
+
+	&:hover {
+		background: lighten(#df4a32, 10%);
+	}
+}
+
+.social.linkedin {
+	background: #4875B4;
+
+	&:hover {
+		background: lighten( #4875B4, 10%);
+	}
+}
+
+.social.instagram {
+	background: #fb3958;
+
+	&:hover {
+		background: lighten( #fb3958, 10%);
+	}
+}
+
+
+// -----------------------------------------------------------------------------
+//! Misc
+// -----------------------------------------------------------------------------
+
+.valign_top > div {
+	vertical-align: top;
+}
+
+.pb_b_row > .pb_b_50:first-child {
+	margin-bottom: 20px;
+}
+
+.home-slider .btn.btn-orange {
+    background: #ff5000;
+}
+
+.home-slider .btn.btn-orange:hover {
+    background: #ff5000;
+    opacity: .85;
+}
+
+.page-content a {
+    color: #ff5000;
+}
+
+.header .mainnav ul li:hover {
+    border-top-color: #ff5000;
+}
+
+.wrapper .color3_overlay {
+    background-color: rgba(255,80,0,.85);
+}
+
+html p {
+    color: #333;
+}
+html .single-blog .featured-image img {
+    max-height: none;
+}
+
+.blog-sidebar a.social:last-of-type {
+    margin-right: 0;
+}
+
+
+// -----------------------------------------------------------------------------
+//! Misc
+// -----------------------------------------------------------------------------
+
+.home-slider .btn.btn-orange {
+    background: #ff5000;
+}
+
+.home-slider .btn.btn-orange:hover {
+    background: #ff5000;
+    opacity: .85;
+}
+
+.page-content a {
+    color: #ff5000;
+}
+
+.header .mainnav ul li:hover {
+    border-top-color: #ff5000;
+}
+
+.wrapper .color3_overlay {
+    background-color: rgba(255,80,0,.85);
+}
+
+html p {
+    color: #333;
+}
+html .single-blog .featured-image img {
+    max-height: none;
+}
+
+.blog-sidebar a.social:last-of-type {
+    margin-right: 0;
+}
+
+/* html .five-solutions a.sbox {
+    background: url(/wp-content/uploads/2017/08/callout-sprite.jpg) no-repeat 0 0;
+} */
+
+/* .five-solutions a.sbox.sbox-1 {background-position: 0 0;}
+.five-solutions a.sbox.sbox-1:hover {background-position: -176px 0;}
+.five-solutions a.sbox.sbox-2 {background-position: 0 -113px;}
+.five-solutions a.sbox.sbox-2:hover {background-position: -176px -113px;}
+.five-solutions a.sbox.sbox-3 {background-position: 0 -226px;}
+.five-solutions a.sbox.sbox-3:hover {background-position: -176px -226px;}
+.five-solutions a.sbox.sbox-4 {background-position: 0 -339px;}
+.five-solutions a.sbox.sbox-4:hover {background-position: -176px -339px;}
+.five-solutions a.sbox.sbox-5 {background-position: 0 -452px;}
+.five-solutions a.sbox.sbox-5:hover {background-position: -176px -452px;}
+.five-solutions a.sbox.sbox-6 {background-position: 0 -565px;}
+.five-solutions a.sbox.sbox-6:hover {background-position: -176px -565px;} */
+
+#rnav #siblings {
+    font-size: 14px;
+}
+
+#rnav #siblings .children {
+    margin: 1em 0 2em;
+}
+#rnav #siblings .children li ~ li {
+    padding-top: 0;
+}
+
+#rnav #siblings .children .page_item a {
+    color: #393939;
+    font-weight: 500;
+}
+
+#rnav #siblings .children .page_item.current_page_item a {
+    color: #00407b;
+    font-weight: 700;
+}
+
+.row.page-content h1,
+body .single-blog-content h1 {
+	text-transform: none;
+	color: #00407b;
+	font-size: 33px;
+	line-height: 1.2em;
+	margin: 15px 0;
+	padding: 0;
+	font-weight: 300;
+}
+
+.row.page-content h2,
+body .single-blog-content h2 {
+	color: #ff5510;
+	text-transform: none;
+	margin: 15px 0 0;
+	padding: 0;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+.row.page-content h2 strong,
+body .single-blog-content h2 strong {
+	font-weight: 300;
+}
+
+.row.page-content h3,
+body .single-blog-content h3 {
+	color: #000;
+	font-weight: 300;
+	font-size: 17px;
+	margin: 15px 0;
+	padding: 0;
+}
+
+.row.page-content h3 + p {
+	padding-top: 0;
+}
+
+.row.page-content p + h3 {
+	margin-top: 30px;
+}

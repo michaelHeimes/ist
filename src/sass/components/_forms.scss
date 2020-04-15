@@ -1,0 +1,115 @@
+/****Gravity Forms Styling ****/
+#gform_wrapper_2 .top_label .stay-informed-email .gfield_label {display:none;}
+#gform_wrapper_2 .gform_footer {padding: 0;margin: 0;}
+#gform_wrapper_2 div.validation_error {display:none;}
+#gform_wrapper_2 li.gfield.gfield_error, #gform_wrapper_2 li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {border: none;padding: 0 !important;background: transparent;}
+#gform_wrapper_2 .top_label .gfield_description.validation_message, #gform_wrapper_2 .gfield_description.validation_message {font-size:10px;}
+
+#gform_confirmation_wrapper_2 .gform_confirmation_message_2 {color:#808080;font-size:15px;line-height:1.4;font-weight:400;margin-top:15px;font-style:italic;}
+
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type="submit"]{border:none;background:#195287;color:#fff;float:right;margin-top:10px;font-size:11px;line-height:18px;padding:6px 8px;}
+
+
+
+
+#gform_wrapper_3 #gform_fields_3, #gform_wrapper_5 #gform_fields_5 {
+	padding-left: 0 !important;
+}
+
+#gform_wrapper_3 .gform_body, #gform_wrapper_5 .gform_body {
+	margin-top: 1em;
+}
+
+#gform_wrapper_3 input[type="text"], #gform_wrapper_5 input[type="text"],
+#gform_wrapper_3 input[type="email"], #gform_wrapper_5 input[type="email"],
+#gform_wrapper_3 input[type="tel"], #gform_wrapper_5 input[type="tel"] {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	transition: 150ms all ease;
+	font-size: 1em;
+}
+
+#gform_wrapper_3 .gfield, #gform_wrapper_5 .gfield {
+	position: relative;
+	padding: 10px 0;
+	margin-bottom: 8px !important;
+}
+
+#gform_wrapper_3 .gfield_label, #gform_wrapper_5 .gfield_label {
+	position: absolute;
+	bottom: 8px;
+	left: 2px;
+	transition: 150ms all ease;
+}
+
+#gform_wrapper_3 .is-focused .gfield_label, #gform_wrapper_5 .is-focused .gfield_label {
+	font-size: 10px;
+	bottom: 32px;
+}
+
+#gform_wrapper_3 .is-focused-label .gfield_label, #gform_wrapper_5 .is-focused-label .gfield_label {
+	color: #195287;
+}
+
+#gform_wrapper_3 input[type="text"]:focus, #gform_wrapper_5 input[type="text"]:focus,
+#gform_wrapper_3 input[type="email"]:focus, #gform_wrapper_5 input[type="email"]:focus,
+#gform_wrapper_3 input[type="tel"]:focus, #gform_wrapper_5 input[type="tel"]:focus {
+	border-bottom: 2px solid #195287;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error, #gform_wrapper_5 li.gfield.gfield_error {
+	background-color: transparent;
+	border: none;
+}
+
+#gform_wrapper_3 .validation_message #gform_wrapper_5 .validation_message {
+	display: none;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required div.ginput_container, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required label.gfield_label, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+	margin-left: 0;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required label.gfield_label, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required label.gfield_label {
+	margin-bottom: 0;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required {
+	margin-top: 0;
+}
+
+#gform_wrapper_3 .gform_footer, #gform_wrapper_5 .gform_footer {
+	margin-top: 0;
+	padding: .75em 0;
+}
+
+#gform_wrapper_3 input[type="submit"], #gform_wrapper_5 input[type="submit"] {
+	float: left;
+}
+
+#gform_wrapper_3 .gfield_error input, #gform_wrapper_5 .gfield_error input {
+	border-color: #790000;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required div.ginput_container, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required div.ginput_container,
+#gform_wrapper_3 .top_label .gfield_error input.large, #gform_wrapper_5 .top_label .gfield_error input.large {
+	max-width: 100%;
+	width: 100%;
+}
+
+#gform_wrapper_3 li.gfield.gfield_error.gfield_contains_required, #gform_wrapper_5 li.gfield.gfield_error.gfield_contains_required {
+	padding-left: 0 !important;
+}
+
+#gform_wrapper_3 .gfield_error, #gform_wrapper_5 .gfield_error {
+	padding: 10px 0;
+}
+
+#gform_wrapper_3 div.validation_error, #gform_wrapper_5 div.validation_error {
+	border: none;
+	font-size: 1em;
+
+	margin-bottom: 0;
+}

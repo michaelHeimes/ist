@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'ist';
+  src: url('../font/ist.eot?88192194');
+  src: url('../font/ist.eot?88192194#iefix') format('embedded-opentype'),
+       url('../font/ist.woff?88192194') format('woff'),
+       url('../font/ist.ttf?88192194') format('truetype'),
+       url('../font/ist.svg?88192194#ist') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ist';
+    src: url('../font/ist.svg?88192194#ist') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "ist";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+/* .icon-search:before { content: '\f50d'; } /* '' */ 
+
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+
